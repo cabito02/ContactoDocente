@@ -1,0 +1,38 @@
+.home-container {
+    text-align: center;
+  }
+  
+  .imagen-empresarial img {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-section {
+    margin: 20px 0;
+  }
+  
+  .carousel-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-inner {
+    max-width: 30%; 
+    margin: 0 auto;
+  }
+  
+  .carousel-item img {
+    width: 80%; 
+    height: auto; 
+    max-height: 1200px; 
+    object-fit: cover; 
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(100%);
+  }
+  

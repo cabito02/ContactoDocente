@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "nombre": "Telefonos",
+      "imagen": "Imagenes/producto1.png",
+      "precio": 150,
+      "descripcion":"Telefonos de alta gama a bajo costo",
+      "categoria":1
+    },
+    {
+      "id": 2,
+      "nombre": "Parlantes",
+      "imagen": "Imagenes/producto2.png",
+      "precio": 160,
+      "descripcion":"Parlantes de alta gama a bajo costo",
+      "categoria":2
+    },
+    {
+      "id": 3,
+      "nombre": "Relog",
+      "imagen": "Imagenes/producto3.png.png",
+      "precio": 30,
+      "descripcion":"Relogues de alta gama a bajo costo",
+      "categoria":3
+    }
+  ]

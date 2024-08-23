@@ -1,0 +1,26 @@
+<div class="container-fluid text-center">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a routerLink="/pokemons" 
+            routerLinkActive="active" >
+            Productos</a></li>
+
+          <li class="breadcrumb-item active" aria-current="page">{{producto?.nombre}}</li>
+        </ol>
+      </nav>
+    <div class="card" style="width: 18rem;">
+        <img [src]="producto?.imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{producto?.nombre}}</h5>
+          <p class="card-text">precio:{{producto?.precio}}</p>
+          <p class="card-text">descripcion:{{producto?.descripcion}}</p>
+          <p class="card-text">categoria:{{producto?.categoria}}</p>
+          <a href="#" class="btn btn-primary">Mas informacion</a>
+          <div class="text-center mt-3">
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+</div>

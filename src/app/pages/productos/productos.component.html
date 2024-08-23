@@ -1,0 +1,29 @@
+<div class="container-fluid text-center">
+    <button type="button" class="btn btn-success" (click)="onClickButton()">Imprimir Mensaje</button>
+  
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">precio</th>
+          <th scope="col">descripcion</th>
+          <th scope="col">categoria</th>
+          <th scope="col">Imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productosdata" style="cursor: pointer;"
+        (click)="onClickProducto(producto)">
+          <th scope="row">{{ producto.id }}</th>
+          <td>{{ producto.nombre}}</td>
+          <td>{{ producto.precio }} </td>
+          <td>{{ producto.descripcion }}</td>
+          <td>{{ producto.categoria }}</td>
+
+          <td><img [src]="producto.imagen" class="figure-img img-fluid rounded" alt="{{ producto.nombre }}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

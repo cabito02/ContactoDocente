@@ -1,0 +1,52 @@
+<div class="home-container">
+
+  <!-- Imagen Empresarial -->
+  <div class="imagen-empresarial">
+    <img [src]="imagenesEmpresariales[0].src" [alt]="imagenesEmpresariales[0].alt" class="img-fluid">
+  </div>
+
+  <!-- Carrusel de Ofertas -->
+  <div class="carousel-section">
+    <h2 class="carousel-title">OFERTAS</h2>
+    <div id="ofertasCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let oferta of ofertas; let i = index" [class.active]="i === 0">
+          <img [src]="oferta.src" class="d-block w-100" [alt]="oferta.alt">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Carrusel de Productos -->
+  <div class="carousel-section">
+    <h2 class="carousel-title">PRODUCTOS</h2>
+    
+    <div id="productosCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let producto of productos; let i = index" [class.active]="i === 0">
+          <img [src]="producto.src" class="d-block w-100" [alt]="producto.alt">
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-primary btn-lg px-5 py-3">Ver Producto</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+</div>

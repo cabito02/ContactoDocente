@@ -1,0 +1,25 @@
+/* src/app/pages/error-404/error-404.component.css */
+.container {
+    padding: 100px;
+  }
+  
+  .display-1 {
+    font-size: 6rem;
+    color: #dc3545; /* Color rojo para el número de error */
+  }
+  
+  h2 {
+    font-size: 8rem;
+    margin-bottom: 50px;
+  }
+  
+  .img-fluid {
+    max-width: 1000%;
+    height: auto;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
